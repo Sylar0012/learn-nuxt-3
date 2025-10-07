@@ -1,11 +1,11 @@
 <template>
   <q-card class="my-card" @click="$emit('click')">
-    <img :src="thumbnail"  alt=""/>
+    <img :src="thumbnail" alt="" />
 
     <q-card-section>
-      <div class="text-h6 ellipsis">{{title}}</div>
+      <div class="text-h6 ellipsis">{{ title }}</div>
       <div class="text-subtitle2 ellipsis text-grey-8">
-        {{subtitle}}
+        {{ subtitle }}
       </div>
     </q-card-section>
   </q-card>
@@ -13,15 +13,14 @@
 
 <script setup lang="ts">
 interface Props {
-  thumbnail: string,
-  title: string,
-  subtitle: string,
+  thumbnail: string;
+  title: string;
+  subtitle: string;
 }
 
 const { thumbnail, title, subtitle } = defineProps<Props>();
 
 defineEmits<{
-  click: [],
+  click: [];
 }>();
-
 </script>
