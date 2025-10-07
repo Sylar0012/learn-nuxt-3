@@ -1,21 +1,15 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <q-header elevated class="bg-dark text-white">
-      <q-toolbar>
-        <q-toolbar-title>Vue Master Course</q-toolbar-title>
-        <q-btn stretch flat label="Home" to="/" />
-        <q-separator dark vertical />
-        <q-btn stretch flat label="About" to="/about" />
-      </q-toolbar>
-    </q-header>
-    <q-page-container :style="pageContainerStyle">
-      <NuxtPage />
-    </q-page-container>
-  </q-layout>
+  <q-page padding>
+    <div class="q-my-xl text-center">
+      <div class="text-h4">All Courses</div>
+      <p class="q-mt-sm text-grey-8">웹 개발 입문부터 실전까지 학습해보세요.</p>
+    </div>
+    <div class="row q-col-gutter-lg">
+      <div v-for="n in 3" :key="n" class="col-12 col-md-4 col-sm-6">
+        <CourseCard />
+      </div>
+    </div>
+  </q-page>
 </template>
-<script setup lang="ts">
-const pageContainerStyle = computed(() => ({
-  maxWidth: '1080px',
-  margin: '0 auto',
-}));
-</script>
+
+<script setup lang="ts"></script>
