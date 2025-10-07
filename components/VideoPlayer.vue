@@ -18,8 +18,6 @@ interface Props {
 }
 
 const { src } = defineProps<Props>();
-
-
 </script>
 
 <style scoped>
