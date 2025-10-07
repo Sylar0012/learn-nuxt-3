@@ -1,6 +1,6 @@
 <template>
   <q-card class="my-card" @click="$emit('click')">
-    <img :src="thumbnail" alt="" />
+    <img :src="thumbnail" alt="썸네일" />
 
     <q-card-section>
       <div class="text-h6 ellipsis">{{ title }}</div>
