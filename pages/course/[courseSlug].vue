@@ -80,7 +80,10 @@ const { course, prevCourse, nextCourse } = useCourse(courseSlug);
 
 definePageMeta({
   key: (route) => route.fullPath,
+  pageType:"",
 })
+
+route.meta.p
 </script>
 
 <style scoped></style>
