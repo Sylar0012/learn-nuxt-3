@@ -6,6 +6,18 @@
         Vue & Nuxt Mastery Class 웹은 Nuxt3로 만들어졌습니다.
       </p>
     </div>
+
+    <div class="column">
+      <RouterLink to="/">RouterLink Home </RouterLink>
+      <RouterLink to="https://www.youtube.com/@gymcoding">
+        RouterLink Youtube
+      </RouterLink>
+      <br />
+      <NuxtLink to="/">NuxtLink Home</NuxtLink>
+      <NuxtLink to="https://www.youtube.com/@gymcoding">
+        NuxtLink Youtube
+      </NuxtLink>
+    </div>
   </q-page>
 </template>
 

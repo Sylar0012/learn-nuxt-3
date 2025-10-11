@@ -1,7 +1,7 @@
 export {};
 
-declare module '#app' {
-    interface PageMeta {
-        pageType?: string
-    }
+declare module "#app" {
+  interface PageMeta {
+    pageType?: string;
+  }
 }

@@ -8,12 +8,12 @@
           시작해봐요!
         </div>
         <q-btn
-            label="시작하기"
-            class="q-mt-lg"
-            size="lg"
-            color="primary"
-            unelevated
-            to="/course/html-css"
+          label="시작하기"
+          class="q-mt-lg"
+          size="lg"
+          color="primary"
+          unelevated
+          to="/course/html-css"
         />
       </div>
     </AppCard>

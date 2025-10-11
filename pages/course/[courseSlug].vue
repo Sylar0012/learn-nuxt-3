@@ -22,22 +22,22 @@
     <div class="row q-col-gutter-md">
       <div class="col-6">
         <q-btn
-            label="인프런에서 수강하기"
-            unelevated
-            class="full-width"
-            color="primary"
-            :href="course?.inflearnUrl"
-            target="_blank"
+          label="인프런에서 수강하기"
+          unelevated
+          class="full-width"
+          color="primary"
+          :href="course?.inflearnUrl"
+          target="_blank"
         />
       </div>
       <div class="col-6">
         <q-btn
-            label="짐코딩 클럽에서 수강하기"
-            unelevated
-            class="full-width"
-            color="red"
-            :href="course?.gymcodingUrl"
-            target="_blank"
+          label="짐코딩 클럽에서 수강하기"
+          unelevated
+          class="full-width"
+          color="red"
+          :href="course?.gymcodingUrl"
+          target="_blank"
         />
       </div>
     </div>
@@ -45,45 +45,45 @@
     <q-separator class="q-mb-lg" />
     <q-form class="q-gutter-y-md">
       <q-btn
-          label="수강완료"
-          class="full-width"
-          color="green"
-          unelevated
-          :outline="completed ? false : true"
-          :icon="completed ? 'check' : undefined"
-          @click="completed = !completed"
+        label="수강완료"
+        class="full-width"
+        color="green"
+        unelevated
+        :outline="completed ? false : true"
+        :icon="completed ? 'check' : undefined"
+        @click="completed = !completed"
       />
       <q-input
-          v-model="memo"
-          type="textarea"
-          outlined
-          dense
-          placeholder="메모를 작성해주세요."
-          rows="3"
-          autogrow
+        v-model="memo"
+        type="textarea"
+        outlined
+        dense
+        placeholder="메모를 작성해주세요."
+        rows="3"
+        autogrow
       />
     </q-form>
     <template #footer>
       <q-btn
-          v-if="prevCourse"
-          label="이전 강의"
-          color="primary"
-          unelevated
-          :to="prevCourse.path"
+        v-if="prevCourse"
+        label="이전 강의"
+        color="primary"
+        unelevated
+        :to="prevCourse.path"
       />
       <q-btn
-          label="쿼리 추가"
-          color="dark"
-          unelevated
-          :to="{ path: $route.path, query: { timestamp: Date.now() } }"
+        label="쿼리 추가"
+        color="dark"
+        unelevated
+        :to="{ path: $route.path, query: { timestamp: Date.now() } }"
       />
       <q-space />
       <q-btn
-          v-if="nextCourse"
-          label="다음 강의"
-          color="primary"
-          unelevated
-          :to="nextCourse.path"
+        v-if="nextCourse"
+        label="다음 강의"
+        color="primary"
+        unelevated
+        :to="nextCourse.path"
       />
     </template>
   </AppCard>
@@ -97,15 +97,14 @@ const { course, prevCourse, nextCourse } = useCourse(courseSlug);
 // const title = ref('');
 definePageMeta({
   key: (route) => route.fullPath,
-  title: 'My home page',
-  pageType: '',
+  title: "My home page",
+  pageType: "",
   keepalive: true,
-  alias: ['/lecture/:courseSlug'],
+  alias: ["/lecture/:courseSlug"],
 });
 
-const memo = ref('');
+const memo = ref("");
 const completed = ref(false);
 </script>
 
 <style scoped></style>
-
