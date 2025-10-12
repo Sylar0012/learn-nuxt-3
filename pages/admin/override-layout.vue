@@ -8,21 +8,21 @@
             <q-separator dark vertical />
             <NuxtLink v-slot="{ navigate }" custom to="/admin/override-layout">
               <q-btn
-                  stretch
-                  flat
-                  label="Override Layout"
-                  no-caps
-                  @click="navigate()"
+                stretch
+                flat
+                label="Override Layout"
+                no-caps
+                @click="navigate()"
               />
             </NuxtLink>
             <q-separator dark vertical />
             <NuxtLink v-slot="{ navigate }" custom to="/admin/dynamic-layout">
               <q-btn
-                  stretch
-                  flat
-                  label="Dynamic Layout"
-                  no-caps
-                  @click="navigate()"
+                stretch
+                flat
+                label="Dynamic Layout"
+                no-caps
+                @click="navigate()"
               />
             </NuxtLink>
             <q-separator dark vertical />

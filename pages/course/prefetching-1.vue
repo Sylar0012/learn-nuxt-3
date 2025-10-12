@@ -8,6 +8,6 @@
   </q-page>
 </template>
 <script lang="ts">
-console.log('prefetching-1');
+console.log("prefetching-1");
 </script>
 <script setup lang="ts"></script>
