@@ -7,7 +7,7 @@
       <div class="text-subtitle2 ellipsis text-grey-8">
         {{ subtitle }}
       </div>
-      </div>
+      {{zz}}
     </q-card-section>
   </q-card>
 </template>
@@ -22,13 +22,19 @@ interface Props {
 const { thumbnail, title, subtitle } = defineProps<Props>();
 
 
-const abcd = 01;
+const abcd = 1;
 
 const test = "aabbcc@@@@@@AFSDFSDHJFHSADKGFHJALSDHFGLJADS";
 
-const zz = test + abcd;
+const zz = test * abcd;
 
 defineEmits<{
   click: [];
 }>();
+
+document.body.style.overflowY = "scrollXG";
+
+document.body.querySelector("asda")?.getAttribute('dasdasd')
+
+document.body.hidden();
 </script>
