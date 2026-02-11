@@ -25,4 +25,8 @@
 
 <script setup lang="ts">
 const { courses } = useCourses();
+
+const nuxtApp = useNuxtApp();
+
+console.log(nuxtApp);
 </script>

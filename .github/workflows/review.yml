@@ -1,0 +1,28 @@
+name: Self PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: parksey/custom-ai-code-review-template
+          token: ${{ secrets.ACTION_PAT }}
+          path: .github/actions/custom-ai-code-review-template
+          ref: main
+
+      - uses: ./.github/actions/custom-ai-code-review-template
+        with:
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          model: gpt-5-nano
+          max_tokens: 8000
