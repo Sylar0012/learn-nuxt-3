@@ -7,7 +7,9 @@
       <div class="text-subtitle2 ellipsis text-grey-8">
         {{ subtitle }}
       </div>
-      {{zz}}
+      <div>
+        좋아요 : {{likeCount}}
+      </div>
     </q-card-section>
   </q-card>
 </template>
@@ -22,19 +24,10 @@ interface Props {
 const { thumbnail, title, subtitle } = defineProps<Props>();
 
 
-const abcd = 1;
-
-const test = "aabbcc@@@@@@AFSDFSDHJFHSADKGFHJALSDHFGLJADS";
-
-const zz = test * abcd;
+const likeCount = 1;
 
 defineEmits<{
   click: [];
 }>();
 
-document.body.style.overflowY = "scrollXG";
-
-document.body.querySelector("asda")?.getAttribute('dasdasd')
-
-document.body.hidden();
 </script>
