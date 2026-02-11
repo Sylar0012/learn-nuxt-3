@@ -7,6 +7,7 @@
       <div class="text-subtitle2 ellipsis text-grey-8">
         {{ subtitle }}
       </div>
+      <div>a<e></e></div>
     </q-card-section>
   </q-card>
 </template>
